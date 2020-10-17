@@ -1,0 +1,15 @@
+# Exercise 10-1
+# Created in Jupyter Notebook, modified to improve output appearance
+
+def nested_sum(list):
+    running_total = 0
+    for i in list:
+        running_total += sum(i)
+    return running_total
+
+
+a = [[1,2], [3], [4,5,6]]
+
+print("Show sum of all values in nested list: " + str(a))
+
+print(str(nested_sum(a)))
